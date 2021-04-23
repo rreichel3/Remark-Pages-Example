@@ -12,9 +12,7 @@ jobs:
     name: Generate a Remark Presentation
     steps:
     - id: Generate-Presentation
-      uses: rreichel3/remarkable-action@v1
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+      uses: rreichel3/remarkable-action@v1.1
         #pages-branch: pages (Default)
         #markdown-path: ./presentation.md (Default)
         #static-html-path: ./boilerplate.html (Default, defined in the Actions repo and doesn't need to exist in your repo)
